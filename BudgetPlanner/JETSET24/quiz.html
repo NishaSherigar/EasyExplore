@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Suggestion Quiz</title>
+    <link rel="stylesheet" href="quiz.css"> <!-- Link to your CSS -->
+</head>
+<body>
+    <header>
+        <img class="clip-circle" src="travel.png" alt="">
+        <h1>Travel Suggestion Quiz</h1>
+        <p>Find the perfect destination for your vacation!</p>
+    </header>
+
+    <main>
+        <form id="travelForm">
+            <label for="country">Choose a country:</label>
+            <select id="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="SouthKorea">South Korea</option>
+                <option value="Italy">Italy</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Japan">Japan</option>
+                <option value="Australia">Australia</option>
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
+                <option value="Germany">Germany</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Thailand">Thailand</option>
+                <option value="India">India</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Greece">Greece</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Portugal">Portugal</option>
+                <option value="SouthAfrica">South Africa</option>
+                <option value="Russia">Russia</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Norway">Norway</option>
+                <option value="Finland">Finland</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Austria">Austria</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Ireland">Ireland</option>
+            </select>
+
+            <label for="mood">Choose your mood:</label>
+            <select id="mood" required>
+                <option value="" disabled selected>Select your mood</option>
+                <option value="Relaxed">Relaxed</option>
+                <option value="Adventurous">Adventurous</option>
+                <option value="Cultural">Cultural</option>
+                <option value="Historical">Historical</option>
+                <option value="Calming">Calming</option>
+            </select>
+
+            <label for="companion">Traveling with:</label>
+            <select id="companion" required>
+                <option value="" disabled selected>Select your companion</option>
+                <option value="Solo">Solo</option>
+                <option value="Friends">Friends</option>
+                <option value="Family">Family</option>
+            </select>
+
+            <label for="budget">Enter your budget:</label>
+            <input type="text" id="budget" placeholder="Enter budget (e.g., $1000)" required>
+
+            <label for="days">Number of vacation days:</label>
+            <input type="number" id="days" min="1" placeholder="Enter number of days" required>
+
+            <label for="climate">Preferred climate:</label>
+            <input type="text" id="climate" placeholder="e.g., sunny, snowy,rainy,autumn,spring" required>
+
+            <label for="experience">Desired experience:</label>
+            <select id="experience" required>
+                <option value="" disabled selected>Select experience</option>
+                <option value="Beaches">Beaches</option>
+                <option value="Mountains">Mountains</option>
+                <option value="Historical">Historical</option>
+                <option value="Cultural">Cultural</option>
+                <option value="Calming">Calming</option>
+            </select>
+
+            <button type="submit">Get Suggestions</button>
+        </form>
+
+        <div id="suggestions"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Travel Suggestions. All Rights Reserved.</p>
+    </footer>
+
+    <script src="quiz.js"></script> <!-- Link to your JavaScript -->
+</body>
+</html>

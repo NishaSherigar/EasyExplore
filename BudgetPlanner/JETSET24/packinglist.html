@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packing List Generator</title>
+    <link rel="stylesheet" href="packinglist.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img class="clip-circle" src="travel.png" alt=""> <!-- Add your logo here -->
+            <h1>JETSET24 Packing List Generator</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Packing List Generator</h1>
+        
+        <label for="destination">Destination:</label>
+        <select id="destination">
+            <option value="">Select Destination</option>
+            <option value="beach">Beach</option>
+            <option value="mountains">Mountains</option>
+            <option value="city">City</option>
+            <option value="countryside">Countryside</option>
+            <option value="desert">Desert</option>
+            <option value="cruise">Cruise</option>
+            <option value="island">Island</option>
+            <option value="national_park">National Park</option>
+            <option value="historical_site">Historical Site</option>
+            <option value="road_trip">Road Trip</option>
+        </select>
+
+        <label for="country">Country:</label>
+        <select id="country">
+            <option value="">Select Country</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+            <option value="france">France</option>
+            <option value="germany">Germany</option>
+            <option value="italy">Italy</option>
+            <option value="japan">Japan</option>
+            <option value="spain">Spain</option>
+            <option value="brazil">Brazil</option>
+            <option value="india">India</option>
+            <option value="south_africa">South Africa</option>
+            <option value="new_zealand">New Zealand</option>
+            <option value="mexico">Mexico</option>
+        </select>
+
+        <label for="season">Season:</label>
+        <select id="season">
+            <option value="">Select Season</option>
+            <option value="spring">Spring</option>
+            <option value="summer">Summer</option>
+            <option value="autumn">Autumn</option>
+            <option value="winter">Winter</option>
+        </select>
+
+        <label for="weather">Weather:</label>
+        <select id="weather">
+            <option value="">Select Weather</option>
+            <option value="sunny">Sunny</option>
+            <option value="rainy">Rainy</option>
+            <option value="cold">Cold</option>
+            <option value="hot">Hot</option>
+            <option value="windy">Windy</option>
+            <option value="foggy">Foggy</option>
+            <option value="stormy">Stormy</option>
+        </select>
+
+        <label for="activities">Planned Activities:</label>
+        <select id="activities" multiple>
+            <option value="swimming">Swimming</option>
+            <option value="hiking">Hiking</option>
+            <option value="sightseeing">Sightseeing</option>
+            <option value="relaxing">Relaxing</option>
+            <option value="skiing">Skiing</option>
+            <option value="snorkeling">Snorkeling</option>
+            <option value="fishing">Fishing</option>
+            <option value="biking">Biking</option>
+            <option value="camping">Camping</option>
+            <option value="shopping">Shopping</option>
+            <option value="dining">Dining Out</option>
+            <option value="cultural_tour">Cultural Tour</option>
+        </select>
+
+        <button id="generateList">Generate Packing List</button>
+
+        <h2>Your Packing List:</h2>
+        <ul id="packingList"></ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 JETSET24. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">FAQ</a>
+            <a href="#">Contact</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="Packing list.js"></script> <!-- Add your JavaScript file here -->
+</body>
+</html>

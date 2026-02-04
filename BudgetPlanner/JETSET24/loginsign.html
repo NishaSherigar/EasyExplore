@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup Page</title>
+    <link rel="stylesheet" href="loginsign.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="loginContainer">
+            <form id="loginForm">
+                <img class="clip-circle" src="travel.png" alt="">
+                <h1>Login</h1>
+                <input type="text" id="loginEmail" placeholder="Email" required />
+                <input type="password" id="loginPassword" placeholder="Password" required />
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" id="switchToSignup">Sign up</a></p>
+            </form>
+        </div>
+
+        <div class="form-container" id="signupContainer" style="display: none;">
+            <form id="signupForm">
+                <img class="clip-circle" src="travel.png" alt="">
+                <h1>Signup</h1>
+                <input type="text" placeholder="Username" required />
+                <input type="email" id="signupEmail" placeholder="Email" required />
+                <input type="password" id="signupPassword" placeholder="Password" required />
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+        import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDc3VLU7R3dUxXulsrxVARPEwyjH5NKHY0",
+            authDomain: "jetset24-550f7.firebaseapp.com",
+            databaseURL: "https://jetset24-550f7-default-rtdb.firebaseio.com",
+            projectId: "jetset24-550f7",
+            storageBucket: "jetset24-550f7.appspot.com",
+            messagingSenderId: "1047150411095",
+            appId: "1:1047150411095:web:f967b1a49311cbd6ae9212"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const auth = getAuth();
+
+        // Switch between forms
+        document.getElementById('switchToSignup').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('loginContainer').style.display = 'none';
+            document.getElementById('signupContainer').style.display = 'block';
+        });
+
+        document.getElementById('switchToLogin').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('signupContainer').style.display = 'none';
+            document.getElementById('loginContainer').style.display = 'block';
+        });
+
+        // Handle login
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            const customToken = document.getElementById('customToken').value; // Get the custom token
+
+            if (customToken) {
+                // If a custom token is provided, use signInWithCustomToken
+                signInWithCustomToken(auth, customToken)
+                .then((userCredential) => {
+                    alert('Logged in successfully with custom token!');
+                    // Redirect the user to a different page here
+                })
+                .catch((error) => {
+                    console.error("Error during login with custom token:", error.message);
+                    alert(error.message);
+                });
+            } else {
+                // Fallback to email/password login
+                signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    alert('Logged in successfully with email/password!');
+                    // Redirect the user to a different page here
+                })
+                .catch((error) => {
+                    console.error("Error during login:", error.message);
+                    alert(error.message);
+                });
+            }
+        });
+
+        // Handle signup
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('signupEmail').value;
+            const password = document.getElementById('signupPassword').value;
+
+            createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                alert('Signed up successfully!');
+                // Redirect the user to a different page here
+            })
+            .catch((error) => {
+                console.error("Error during signup:", error.message);
+                alert(error.message);
+            });
+        });
+    </script>
+</body>
+</html>

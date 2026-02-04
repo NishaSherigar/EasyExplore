@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Font family */
+    background: linear-gradient(135deg, #b5e2ff, #0a374d); /* Background gradient */
+    margin: 0;
+    padding: 0;
+    color: #070606; /* Text color */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 15px 0; /* Padding for header */
+}
+
+.header-container {
+    max-width: 1200px; /* Max width for header content */
+    margin: 0 auto; /* Center header */
+    text-align: center; /* Center align text */
+}
+
+header p {
+    color: #190202; /* Text color for paragraph */
+    font-size: 1.2rem; /* Font size for the paragraph */
+    margin: 10px 0; /* Spacing around paragraph */
+}
+
+.logo {
+    display: block; /* Block display for centering */
+    margin: 0 auto 10px; /* Center and space below */
+    max-width: 150px; /* Limit logo size */
+}
+
+h1 {
+    color: #ffcc00; /* Header color */
+    margin: 20px 0; /* Spacing around header */
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 10px; /* Space above nav */
+}
+
+nav a {
+    color: #f4ecec; /* White text for nav links */
+    margin: 0 15px; /* Spacing between links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+/* Main Styles */
+main {
+    max-width: 1200px; /* Limit main content width */
+    margin: 20px auto; /* Center main content */
+    padding: 0 20px; /* Padding for main content */
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Wrap boxes to the next row */
+    justify-content: center; /* Center the boxes */
+}
+
+/* Section Styles */
+.terms-container {
+    background: linear-gradient(rgb(162, 203, 236), rgb(26, 131, 216)); /* Gradient background for sections */
+    color: #ffffff; /* White text for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for sections */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+    padding: 20px; /* Padding for terms container */
+    margin: 20px; /* Spacing around terms container */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Adjusting content order in sections */
+.terms-container h2 {
+    margin: 10px 0; /* Space around title */
+    color: #ebbc2e; /* Gold color for headings */
+}
+
+/* Text Styles in Sections */
+.info {
+    padding: 10px; /* Padding for information below image */
+    flex-shrink: 0; /* Prevent shrinking of info section */
+}
+
+p, ul {
+    font-size: 0.9rem; /* Slightly smaller font size for better fit */
+    margin: 5px 0; /* Margin for paragraphs and lists */
+    color: #0b0404; /* Text color for paragraphs */
+    word-wrap: break-word; /* Break words to avoid overflow */
+}
+
+ul {
+    padding-left: 20px; /* Padding for list items */
+}
+
+ul li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center footer text */
+    background-color: #230c0c; /* Dark footer background */
+    color: white; /* Footer text color */
+    padding: 20px 0; /* Padding for footer */
+    margin-top: 20px; /* Margin above footer */
+}
+
+footer p {
+    margin: 0; /* Remove margin for footer text */
+    color: white; /* Footer text color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    main {
+        justify-content: center; /* Center boxes on smaller screens */
+    }
+    section {
+        width: calc(50% - 20px); /* Two boxes per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        justify-content: center; /* Center boxes on very small screens */
+    }
+    section {
+        width: 100%; /* One box per row on very small screens */
+    }
+}
+
+/* Circular Image Styles */
+.clip-circle {
+    width: 150px; /* Set width of the image */
+    height: 150px; /* Set height of the image */
+    margin-left:650px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 3px solid #ffffff; /* Optional: adds a white border around the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: adds shadow to the image */
+}

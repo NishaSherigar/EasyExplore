@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #001f3f, #007bff);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    backdrop-filter: blur(10px);
+}
+
+/* Header */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #00d4ff;
+    font-weight: bold;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Fields */
+input {
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: background 0.3s, transform 0.2s;
+}
+input::placeholder {
+    color: #b3e5fc;
+}
+input:focus {
+    background-color: rgba(0, 212, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Button */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background-color: #00d4ff;
+    color: #001f3f;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+button:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+/* Links */
+p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #b3e5fc;
+}
+a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Image Styling */
+.clip-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 20px auto;
+}

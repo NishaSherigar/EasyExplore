@@ -1,0 +1,42 @@
+var Countries = [
+  {
+    photo: 'http://www.ansonika.com/panagea/img/flex_slides/slide_1_thumb.jpg',
+    bgPhoto: 'http://www.ansonika.com/panagea/img/flex_slides/slide_1.jpg',
+    city: 'Delhi',
+    country: 'INDIA',
+    price: 75,
+    description: 'Delhi, The Capital of Incredible India',
+  },
+  {
+    photo: 'http://www.ansonika.com/panagea/img/flex_slides/slide_2_thumb.jpg',
+    bgPhoto: 'http://www.ansonika.com/panagea/img/flex_slides/slide_2.jpg',
+    city: 'Goa',
+    country: 'INDIA',
+    price: 65,
+    description: 'Goa, Beaches and Portuguese Heritage',
+  },
+  {
+    photo: 'http://www.ansonika.com/panagea/img/flex_slides/slide_3_thumb.jpg',
+    bgPhoto: 'http://www.ansonika.com/panagea/img/flex_slides/slide_3.jpg',
+    city: 'Jaipur',
+    country: 'INDIA',
+    price: 85,
+    description: 'Jaipur, The Pink City of Rajasthan',
+  },
+  {
+    photo: 'http://www.ansonika.com/panagea/img/flex_slides/slide_4_thumb.jpg',
+    bgPhoto: 'http://www.ansonika.com/panagea/img/flex_slides/slide_4.jpg',
+    city: 'Kerala',
+    country: 'INDIA',
+    price: 90,
+    description: 'Kerala, Gods Own Country with Backwaters',
+  },
+  {
+    photo: 'http://www.ansonika.com/panagea/img/flex_slides/slide_5_thumb.jpg',
+    bgPhoto: 'http://www.ansonika.com/panagea/img/flex_slides/slide_5.jpg',
+    city: 'Agra',
+    country: 'INDIA',
+    price: 70,
+    description: 'Agra, Home to the Iconic Taj Mahal',
+  },
+];

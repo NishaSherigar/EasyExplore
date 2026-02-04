@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Reviews and Recommendations</title>
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+    
+    <div class="container">
+        <img class="clip-circle" src="travel.png" alt="">
+        <h1>User Reviews and Recommendations</h1>
+        <form id="review-form">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="place">Place Visited:</label>
+                <input type="text" id="place" required>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating (1-5):</label>
+                <input type="number" id="rating" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="review">Your Review:</label>
+                <textarea id="review" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <div id="reviews-section">
+            <h2>User Reviews</h2>
+            <ul id="reviews-list"></ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        <p>Contact us at <a href="JETSET24@gmail.com">info@yourcompany.com</a></p>
+    </footer>
+
+    <script src="Reviews.js"></script>
+</body>
+</html>

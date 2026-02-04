@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Font family */
+    background: linear-gradient(135deg, #a8d8ea, #427cda); /* Background gradient */
+    margin: 0;
+    padding: 0;
+    color: #070606; /* Text color */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px 0; /* Padding for header */
+}
+
+h1 {
+    color: #ffcc00; /* Header color */
+    margin: 10px 0; /* Spacing around header */
+    text-align: center; /* Center align text */
+}
+
+p {
+    color: #ffffff; /* White text color for subtitle */
+    text-align: center; /* Center align subtitle */
+    margin: 5px 0; /* Spacing around subtitle */
+}
+
+/* Main Styles */
+main {
+    max-width: 800px; /* Max width for the form */
+    margin: 0 auto; /* Center main content */
+    padding: 20px; /* Padding for main content */
+}
+
+/* Form Styles */
+form {
+    background: rgba(255, 255, 255, 0.9); /* Background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 20px; /* Padding inside the form */
+}
+
+/* Label Styles */
+label {
+    font-size: 14px; /* Font size for labels */
+    margin-bottom: 5px; /* Spacing below labels */
+    display: block; /* Block display */
+}
+
+/* Select Styles */
+select,
+input[type="text"],
+input[type="number"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside select and inputs */
+    margin-bottom: 15px; /* Spacing below select and inputs */
+    border: 1px solid #efe7e7; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background: rgb(255, 254, 254); /* Background color */
+    color: #0a0a18; /* Text color */
+    font-size: 16px; /* Font size */
+}
+
+select:focus,
+input[type="text"]:focus,
+input[type="number"]:focus {
+    background: rgba(255, 253, 253, 0.4); /* Change background on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+button {
+    background: #11519f; /* Button background color */
+    border: none; /* No border */
+    color: white; /* Text color */
+    padding: 10px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size */
+    transition: transform 0.3s, background 0.3s; /* Smooth transition */
+    width: 100%; /* Full width */
+}
+
+button:hover {
+    transform: translateY(-3px); /* Raise button on hover */
+    background: #0a3c7a; /* Darker shade on hover */
+}
+
+/* Suggestions Styles */
+#suggestions {
+    margin-top: 20px; /* Space above suggestions */
+    font-size: 16px; /* Font size for suggestions */
+    padding: 10px; /* Padding for suggestions */
+    background: rgba(255, 255, 255, 0.8); /* Background for suggestions */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for footer */
+    padding: 10px 0; /* Padding for footer */
+    text-align: center; /* Center text in footer */
+    position: relative; /* Positioning */
+    bottom: 0; /* Stick to bottom */
+    width: 100%; /* Full width */
+}
+
+footer p {
+    margin: 5px 0; /* Spacing for footer text */
+    color: #ffffff; /* White text for footer */
+}
+
+/* Circular Image Styles */
+.clip-circle {
+    width: 150px; /* Set width of the image */
+    height: 150px; /* Set height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 3px solid #ffffff; /* Optional: adds a white border around the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow for depth */
+    display: block; /* Ensures the image is a block element */
+    margin: 20px auto; /* Centers the image with margin */
+}

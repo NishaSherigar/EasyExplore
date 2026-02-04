@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #f4f4f4; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333; /* Darker background for the nav */
+    display: flex;
+    justify-content: center; /* Center nav items */
+    padding: 15px 0;
+}
+
+nav a {
+    color: #f4f4f4;
+    margin: 0 15px; /* Spacing between links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+/* Background Section Styles */
+.background {
+    position: relative;
+    text-align: center;
+    height: 400px; /* Height of the background section */
+    background-color: #1a1a1a; /* Dark background to match body */
+}
+
+/* Half-page background image */
+.half-background {
+    background: url('your-background-image.jpg') no-repeat center center/cover; /* Set your own background image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%; /* Only cover the top half */
+    z-index: -1; /* Send it to the back */
+}
+
+.clip-circle {
+    border-radius: 50%; /* Circular image */
+    width: 150px; /* Size of the image */
+    height: 150px; /* Size of the image */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+    border: 5px solid #ffcc00; /* Border around the image */
+    margin:20px 0px;
+    margin-bottom: 20px;
+}
+
+header h4 {
+    font-size: 2.5rem; /* Main title size */
+    margin: 0;
+    color: #ffcc00; /* Title color */
+}
+
+header h5 {
+    font-size: 1.8rem; /* Subtitle size */
+    color: #fff; /* Subtitle color */
+    font-style: italic;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    justify-content: center; /* Center the search bar */
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border-radius: 5px 0 0 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border for the input */
+    width: 500px; /* Width of the input */
+    height:30px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #ffcc00; /* Button color */
+    border: none; /* No border */
+    border-radius: 0 5px 5px 0; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+}
+
+/* Featured Destinations Styles */
+.featured-destinations {
+    margin-top: 20px;
+}
+
+.featured-destinations h2 {
+    text-align: center; /* Center the section title */
+    font-size: 2rem; /* Size of the section title */
+    margin-bottom: 20px;
+    color: #ffcc00; /* Section title color */
+}
+
+.destination-cards {
+    display: flex;
+    justify-content: space-around; /* Space between cards */
+    flex-wrap: wrap; /* Allow cards to wrap */
+}
+
+.card {
+    background: #333; /* Dark background for cards */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    width: 30%; /* Card width */
+    margin: 10px; /* Spacing around cards */
+    transition: transform 0.3s ease; /* Transition for scaling */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.card img {
+    width: 100%; /* Image takes full width of card */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.card h3 {
+    margin: 10px 0; /* Margin for title */
+    font-size: 1.5rem; /* Title size */
+    text-align: center; /* Center the title */
+}
+
+.card p {
+    margin: 0 10px 10px; /* Margin for description */
+    text-align: center; /* Center the description */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark background for footer */
+    padding: 20px 0; /* Padding for footer */
+    text-align: center; /* Center text in footer */
+}
+
+footer a {
+    color: #f4f4f4; /* Footer link color */
+    margin: 0 15px; /* Spacing between links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .copyright {
+    display: block; /* New line for copyright */
+    margin-top: 10px; /* Spacing above copyright */
+}

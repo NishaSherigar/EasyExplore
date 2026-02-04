@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css"> <!-- Link to your CSS file -->
+    <title>FAQ | JETSET24</title>
+</head>
+<body>
+    <header>
+        <img src="travel.png" alt="JETSET24 Logo" class="clip-circle"> <!-- Logo image -->
+    </header>
+
+    
+
+    <h1>Frequently Asked Questions (FAQ)</h1>
+    
+    <div class="faq-container">
+        <div class="faq-item">
+            <h3>What is JETSET24?</h3>
+            <p>JETSET24 is a travel planning platform that helps you discover and explore destinations worldwide.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How can I plan my trip using JETSET24?</h3>
+            <p>You can use our budget planner, currency exchange tools, and destination guides to plan your trip effectively.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I contact customer support?</h3>
+            <p>Yes, you can reach out to our customer support team through the Contact page for assistance.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do you offer travel packages?</h3>
+            <p>Currently, we provide tools for travel planning, but we do not offer specific travel packages.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How can I provide feedback?</h3>
+            <p>We welcome your feedback! Please use the contact form on our Contact page to share your thoughts.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <span class="copyright">&copy; 2024 | JETSET24</span>
+    </footer>
+
+    <!-- JavaScript to toggle FAQ answers -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const faqItems = document.querySelectorAll('.faq-item h3');
+
+            faqItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

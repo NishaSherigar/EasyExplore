@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="C:\Users\Ritika\OneDrive\Desktop\namaste web dev\logo\fav\favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\Ritika\OneDrive\Desktop\namaste web dev\logo\fav\favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\Ritika\OneDrive\Desktop\namaste web dev\logo\fav\favicon.ico">
+    <link rel="manifest" href="C:\Users\Ritika\OneDrive\Desktop\namaste web dev\logo\fav\favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="home.css">
+    <title>JETSET24 | Home</title>
+    <script>
+        function searchCountry() {
+            const input = document.getElementById('country-search').value.toLowerCase();
+            const countryMap = {
+                'thailand': 'thailand.html',
+                'japan': 'japan.html',
+                'usa': 'usa.html',
+                'switzerland': 'switzerland.html',
+                'uk': 'uk.html',
+                'italy': 'italy.html',
+                'southkorea': 'southkorea.html',
+                'france': 'france.html',
+                'spain': 'spain.html',
+                'india': 'germany.html',
+                'brazil': 'brazil.html',
+                'canada': 'canada.html',
+                'australia': 'australia.html',
+                'austria': 'austria.html',
+                'china': 'china.html',
+                'turkey': 'turkey.html',
+                'mexico': 'mexico.html',
+                'indonesia': 'indonesia.html',
+                'greece': 'greece.html',
+                'srilanka': 'srilanka.html',
+                'norway': 'norway.html',
+                'iceland': 'iceland.html',
+                'germany': 'germany.html',
+                // Add more countries and their corresponding pages here
+            };
+
+            const countryPage = countryMap[input];
+            if (countryPage) {
+                window.location.href = countryPage; // Redirect to the specific country page
+            } else {
+                alert('Country not found!'); // Alert if the country is not in the map
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="budget.html">Budget Planner</a>
+        <a href="currency.html">Currency Exchange</a>
+        <a href="packinglist.html">Packing List</a>
+        <a href="language.html">Language</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="loginsign.html">Login/Signup</a>
+    </nav>
+    
+    <div class="background">
+        <img class="clip-circle" src="travel.png" alt="">
+        <header>
+            <h4>JETSET24</h4>
+            <h5>Explore, plan, and embark on your dream journey with JETSET24 – your ultimate travel companion.</h5>
+        </header>
+    </div>
+    
+    <main>
+        <div class="search-bar">
+            <input type="text" id="country-search" placeholder="Search Destinations...">
+            <button onclick="searchCountry()">Search</button>
+        </div>
+        
+        <section class="featured-destinations">
+            <h2>Featured Destinations</h2>
+            <div class="destination-cards">
+                <div class="card">
+                    <img src="paris.jpg" alt="Paris">
+                    <h3>Paris</h3>
+                    <p>The city of lights and love!</p>
+                </div>
+                <div class="card">
+                    <img src="bali.jpg" alt="Bali">
+                    <h3>Bali</h3>
+                    <p>A tropical paradise awaits!</p>
+                </div>
+                <div class="card">
+                    <img src="nyc.jpg" alt="New York City">
+                    <h3>New York City</h3>
+                    <p>The city that never sleeps!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <span class="copyright">&copy; 2024 | JETSET24</span>
+    </footer>
+</body>
+</html>

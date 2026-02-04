@@ -1,54 +1,60 @@
-# EasyExplore
+# EasyExplore 🌍✈️
 
-**EasyExplore** is a premium, responsive website template designed for travel agencies, hotels, and restaurant listings. Built with modern web technologies, it offers a seamless user experience for browsing tours, hotels, restaurants, and more. The template includes interactive features like modals, maps, booking forms, and a blog section, making it ideal for travel-related businesses.
+**EasyExplore** is a premium, responsive website template designed for travel agencies, hotels, and restaurant listings. Built with modern web technologies, it offers a seamless user experience for browsing tours 🧳, hotels 🏨, restaurants 🍽️, and more. The template includes interactive features like modals, maps 🗺️, booking forms, and a blog section, making it ideal for travel-related businesses.
 
-## Table of Contents
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+## ✨ Features
+- 🧳 **Tours Section**: Browse and explore popular tours with detailed information.
+- 🏨 **Hotels & Accommodations**: View hotel listings with images and amenities.
+- 🍽️ **Restaurants**: Discover restaurants with menus and location details.
+- 📝 **Blog**: Read travel-related posts and articles.
+- 💰 **Budget Planner**: Integrated budget planning tool for trips.
+- 🎫 **Ticket Booking**: Transportation booking interface.
+- 💳 **Payment Integration**: UI flow for booking payments.
+- 🗺️ **Interactive Maps**: Location-based features using Leaflet.
+- 🔐 **User Authentication UI**: Sign-in and registration modals.
+- 📱 **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
+- 🎞️ **Modals & Sliders**: Dynamic content loading using AngularJS.
 
-## Features
-- **Tours Section**: Browse and book popular tours with detailed itineraries, pricing, and reviews.
-- **Hotels & Accommodations**: Explore hotel listings with images, amenities, and booking options.
-- **Restaurants**: Discover restaurants with menus, locations, and user reviews.
-- **Blog**: Read travel-related posts and articles.
-- **Budget Planner**: Integrated budget planning tool for trips.
-- **Ticket Booking**: Transportation booking module.
-- **Payment Integration**: Secure payment gateway for bookings.
-- **Interactive Maps**: Powered by Leaflet for location-based features.
-- **User Authentication**: Sign-in and registration modals.
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
-- **Modals & Sliders**: Dynamic content loading with AngularJS.
+## 📸 Screenshots
 
-## Screenshots
+### 🏠 Homepage
+<img width="1895" height="921" alt="Homepage Screenshot" src="https://github.com/user-attachments/assets/f2f7dba6-1ad9-4cf6-886f-43215efc1f34" />
 
-### Homepage
-![Homepage Screenshot](<img width="1895" height="921" alt="Image" src="https://github.com/user-attachments/assets/f2f7dba6-1ad9-4cf6-886f-43215efc1f34" />)
 *The main landing page showcasing featured tours, hotels, and restaurants.*
 
-### Tours Detail
+### 🧳 Tours Detail
 ![Tours Detail Screenshot](screenshots/tours-detail.png)
-*Detailed view of a tour package with itinerary, pricing, and booking form.*
 
-### Hotels List
+*Detailed view of a tour package with itinerary and pricing information.*
+
+### 🏨 Hotels List
 ![Hotels List Screenshot](screenshots/hotels-list.png)
-*List of popular hotels with ratings and quick booking options.*
 
-### Restaurants
+*List of popular hotels with ratings and booking options.*
+
+### 🍽️ Restaurants
 ![Restaurants Screenshot](screenshots/restaurants.png)
-*Restaurant listings with images, reviews, and location maps.*
 
-### Blog Section
+*Restaurant listings with images and location maps.*
+
+### 📝 Blog Section
 ![Blog Screenshot](screenshots/blog.png)
-*Travel blog posts with author details and sharing options.*
 
-*Note: Screenshots are placeholders. Add actual screenshots to the `screenshots/` folder for better visualization.*
+*Travel blog posts with author details and articles.*
+
+> ⚠️ *Screenshots are placeholders. Replace them with actual screenshots for better visualization.*
+
+## ⚙️ Installation
+
+### 📌 Prerequisites
+- A modern web browser (Chrome, Firefox, Edge)
+
+### 🚀 Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/NishaSherigar/EasyExplore.git
+   cd EasyExplore
+
 
 ## Installation
 

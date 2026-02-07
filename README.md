@@ -111,24 +111,6 @@
 - **Icons**: Font Awesome, Custom SVGs
 - **Build Tools**: None (static site)
 
-## Project Structure
-```
-EasyExplore/
-├── index.html                 # Main HTML file
-├── package.json               # Dependencies
-├── README.md                  # This file
-├── assets/                    # PHP scripts for contact/newsletter
-├── BudgetPlanner/             # Budget planning module
-├── css/                       # Stylesheets
-├── img/                       # Images and icons
-├── js/                        # JavaScript files
-├── Payment/                   # Payment integration
-├── sass/                      # SCSS source files
-├── TicketBooking/             # Transportation booking
-└── .gitignore                 # Git ignore file
-```
-
-
 ### Guidelines
 - Ensure code is well-documented.
 - Test on multiple browsers.

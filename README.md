@@ -1,6 +1,6 @@
 # EasyExplore 🌍✈️
 
-**EasyExplore** is a premium, responsive website template designed for travel agencies, hotels, and restaurant listings. Built with modern web technologies, it offers a seamless user experience for browsing tours 🧳, hotels 🏨, restaurants 🍽️, and more. The template includes interactive features like modals, maps 🗺️, booking forms, and a blog section, making it ideal for travel-related businesses.
+**EasyExplore** is a premium website template designed for travel agencies, hotels, and restaurant listings. Built with modern web technologies, it offers a seamless user experience for browsing tours 🧳, hotels 🏨, restaurants 🍽️, and more. The template includes interactive features like modals, maps 🗺️, booking forms, and a blog section, making it ideal for travel-related businesses.
 
 ## ✨ Features
 - 🧳 **Tours Section**: Browse and explore popular tours with detailed information.
